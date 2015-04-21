@@ -13,8 +13,8 @@ function changeTimeFrame(range)
 	    url: '<%= root_path + "api/visits?metrics=unique_visits,first_visits,repeat_visits&unit_count=#{(1.send(range)/1.send(unit)).round}&unit=#{unit}"%>',
 	    dataType: "json",
 	    success: function(data) {
-		visits_area.setData(data);
-		unique_visits_line.setData(data);
+        visits_area.setData(data['api']);
+        unique_visits_line.setData(data['api']);
 	    }
 	});
 
