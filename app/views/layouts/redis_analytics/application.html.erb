@@ -6,7 +6,7 @@
   <%= javascript_include_tag "redis_analytics/redis_analytics" %>
   <%= csrf_meta_tags %>
 </head>
-<body onload="changeTimeFrame('<%=@range%>')">
+<body>
 <%= render partial: 'header', layout: false %>
 
 <%= yield %>
