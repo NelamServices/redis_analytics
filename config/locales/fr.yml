@@ -15,7 +15,9 @@ fr:
         more_than_30_days: Plus de 30 jours
 
       visits_area:
-        visits: Visiteurs
+        visits:             Visiteurs
+        new_visitors:       Nouveaux visiteurs
+        returning_visitors: Visiteurs connus
 
       unique_visits_line:
         absolute_unique_visits: Visiteurs Uniques
