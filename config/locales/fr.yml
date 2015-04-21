@@ -1,0 +1,6 @@
+fr:
+  redis_analytics:
+    visits:
+      browsers_donut:
+        browser_info: Navigateurs
+
