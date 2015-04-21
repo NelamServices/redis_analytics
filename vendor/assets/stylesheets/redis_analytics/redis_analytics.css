@@ -12,3 +12,5 @@
  *= require redis_analytics/morris
  *= require redis_analytics/bootstrap.min
  */
+
+.modal {width:940px;left:36%;}
