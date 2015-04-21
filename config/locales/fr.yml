@@ -8,7 +8,12 @@ fr:
         browser_info: Navigateurs
 
       visits_js:
-        visits: Visites
+        visits:          Visites
+        page_views:      Pages vues
+        pages_per_visit: Pages par visite
+        bounce_rate:     Taux de rebond
+        avg_time_spent:  Tps moyen par visite
+        new_visits:      Nouveaux visiteurs
 
       visitor_recency_slices:
         visit_recency:     Visites Recentes
