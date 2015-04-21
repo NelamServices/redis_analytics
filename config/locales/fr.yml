@@ -14,5 +14,8 @@ fr:
         7_to_30_days:      7 à 30 jours
         more_than_30_days: Plus de 30 jours
 
+      visits_area:
+        visits: Visiteurs
+
       unique_visits_line:
         absolute_unique_visits: Visiteurs Uniques
