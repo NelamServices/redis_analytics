@@ -7,4 +7,12 @@ fr:
       browsers_donut:
         browser_info: Navigateurs
 
+      visitor_recency_slices:
+        visit_recency:     Visites Recentes
+        less_than_1_day:   Moins d'un jour
+        1_to_7_days:       1 à 7 jours
+        7_to_30_days:      7 à 30 jours
+        more_than_30_days: Plus de 30 jours
 
+      unique_visits_line:
+        absolute_unique_visits: Visiteurs Uniques
