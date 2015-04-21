@@ -1,7 +1,7 @@
 <table class="table table-bordered table-hover">
   <tr>
     <td>
-      <p class="text-center"><b>Visits</b></p>
+      <p class="text-center"><b><%= t('.visits') %></b></p>
       <div id="visits_area" style="width:100%;height:160px;"></div>
     </td>
   </tr>
@@ -13,7 +13,7 @@
 	xkey: 'raw',
 	//data: data,
 	ykeys: ['first_visits', 'repeat_visits'],
-	labels: ['New Visitors', 'Returning Visitors'],
+  labels: ['<%= t('.new_visitors') %>', '<%= t('.returning_visitors') %>'],
 	ymax: 'auto',
 	grid: true,
 	eventStrokeWidth: 2,
