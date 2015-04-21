@@ -1,3 +1,11 @@
 en:
-  redis_analytics: t
+  redis_analytics:
+    visits:
+      referers_donut:
+        traffic_sources: Traffic Sources
+
+      browsers_donut:
+        browser_info: Browsers
+
+
 

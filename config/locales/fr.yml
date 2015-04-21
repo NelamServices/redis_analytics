@@ -1,6 +1,10 @@
 fr:
   redis_analytics:
     visits:
+      referers_donut:
+        traffic_sources: Sources de trafic
+
       browsers_donut:
         browser_info: Navigateurs
+
 
