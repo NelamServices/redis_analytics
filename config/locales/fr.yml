@@ -14,6 +14,9 @@ fr:
         7_to_30_days:      7 à 30 jours
         more_than_30_days: Plus de 30 jours
 
+      visits_donut:
+        total_visits: Nombre de visites
+
       visits_area:
         visits:             Visiteurs
         new_visitors:       Nouveaux visiteurs
