@@ -7,6 +7,9 @@ fr:
       browsers_donut:
         browser_info: Navigateurs
 
+      visits_js:
+        visits: Visites
+
       visitor_recency_slices:
         visit_recency:     Visites Recentes
         less_than_1_day:   Moins d'un jour
