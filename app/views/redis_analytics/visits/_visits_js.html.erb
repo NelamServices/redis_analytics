@@ -1,4 +1,6 @@
 <script type="text/javascript" language="text/javascript">
+
+$(document).ready(function() {
 function changeTimeFrame(range)
 {
     var mapObject = $('#world-map').vectorMap('get', 'mapObject');
@@ -122,8 +124,12 @@ function convertToCSV(objArray) {
   return str;
 };
 
-$(document).ready(function() {
   changeTimeFrame('<%=@range%>');
+  $('.range_button').on('click', function (e) {
+    changeTimeFrame($(this).data('range'));
+    e.preventDefault();
+
+  })
 })
 
 </script>
