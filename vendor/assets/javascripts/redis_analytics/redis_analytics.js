@@ -16,5 +16,6 @@
 //= require redis_analytics/jquery-jvectormap-world-mill-en
 //= require redis_analytics/raphael-min
 //= require redis_analytics/morris.min
+//= require redis_analytics/change_time_frame
 //= require redis_analytics/bootstrap.min
 
