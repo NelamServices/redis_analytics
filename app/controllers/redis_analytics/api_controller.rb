@@ -6,13 +6,13 @@ module RedisAnalytics
       unit = params[:unit] || 'day'
       aggregate = (params[:aggregate] == 'yes')
       units = (params[:unit_count] || 1).to_i
-      p = params[:metrics].split(',')
+      p = (params[:metrics] || '').split(',')
       from_date_time = to_date_time - units.send(unit)
       results = []
-      
+
       p.each_with_index do |q, j|
         result = self.send("#{unit}ly_#{q}", from_date_time, :to_date => to_date_time, :aggregate => aggregate)
-        if result.is_a?(Array) # time range data (non-aggregate)
+        if result.is_a?(Array)
           result.each_with_index do |r, i|
             results[i] ||= {}
             date_value = r[0][0..2]
@@ -20,7 +20,6 @@ module RedisAnalytics
             date_time_value = []
             date_time_value << date_value.join('-')
             date_time_value << time_value.join(':') if time_value
-            # results[i]['raw'] = date_time_value.join(' ').strip
             results[i]['unix'] = Time.mktime(*r[0].map(&:to_i)).to_i
             strf = case unit
                    when 'minute'
@@ -41,7 +40,7 @@ module RedisAnalytics
           results[j] = {q => result}
         end
       end
-      render :json => results 
+      render :json => results
     rescue Exception => e
       render :status => 500, :text => [e.message, e.backtrace]
     end
